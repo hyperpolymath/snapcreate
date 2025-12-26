@@ -1,0 +1,155 @@
+// SPDX-License-Identifier: MIT OR AGPL-3.0-or-later
+// SPDX-FileCopyrightText: 2024-2025 hyperpolymath
+
+= SnapCreate Roadmap
+:toc:
+:toclevels: 2
+:icons: font
+
+== Current Status
+
+*Phase: Pre-specification*
+
+This project is in the initial scaffolding phase. The repository contains RSR (Rhodium Standard Repository) infrastructure but awaits project specification and implementation.
+
+== Infrastructure Complete
+
+The following foundational elements are in place:
+
+=== Repository Infrastructure
+
+[%header,cols="2,1,2"]
+|===
+| Component | Status | Notes
+
+| Git repository structure | Done | Standard layout
+| License (MIT / AGPL-3.0-or-later) | Done | Dual license with Palimpsest overlay
+| EditorConfig | Done | Consistent formatting
+| Gitignore / Gitattributes | Done | Standard patterns
+|===
+
+=== CI/CD Pipelines
+
+[%header,cols="2,1,2"]
+|===
+| Workflow | Status | Purpose
+
+| CodeQL Analysis | Done | Security scanning
+| Quality checks | Done | Linting, formatting
+| Scorecard | Done | Supply chain security
+| Security policy enforcement | Done | Dependency auditing
+| RSR antipattern detection | Done | Standards compliance
+| Guix/Nix policy | Done | Package management validation
+| Mirror sync | Done | Multi-forge distribution
+|===
+
+=== Documentation Templates
+
+[%header,cols="2,1"]
+|===
+| Document | Status
+
+| README.adoc | Placeholder ready
+| CONTRIBUTING.md | Template (needs customisation)
+| SECURITY.md | Template (needs customisation)
+| CODE_OF_CONDUCT.md | Done
+| CITATIONS.adoc | Done
+|===
+
+=== Development Tooling
+
+[%header,cols="2,1,2"]
+|===
+| Tool | Status | Notes
+
+| Justfile | Done | RSR standard template with TODOs
+| Claude AI config (.claude/CLAUDE.md) | Done | Hyperpolymath language policy
+|===
+
+== Awaiting Specification
+
+The following require project specification before implementation:
+
+=== Core Project Definition
+
+* [ ] Project purpose and scope
+* [ ] Target use cases
+* [ ] Feature requirements
+* [ ] Architecture decisions (ADRs)
+
+=== Build System
+
+* [ ] guix.scm or flake.nix
+* [ ] deno.json (if using ReScript/JS)
+* [ ] Cargo.toml (if using Rust)
+* [ ] Custom justfile recipes for the project
+
+=== Source Code
+
+* [ ] src/ directory structure
+* [ ] Core modules
+* [ ] Tests
+* [ ] Examples
+
+=== RSR Compliance
+
+* [ ] .well-known/security.txt
+* [ ] .well-known/ai.txt
+* [ ] .well-known/humans.txt
+* [ ] RSR_COMPLIANCE.adoc
+* [ ] STATE.scm (Guile Scheme state file)
+
+== Future Phases
+
+[NOTE]
+====
+The phases below are placeholders. Actual roadmap milestones will be defined once the project specification is uploaded.
+====
+
+=== Phase 1: Specification
+
+* Define project scope and requirements
+* Document architecture decisions
+* Set up development environment
+* Establish testing strategy
+
+=== Phase 2: Foundation
+
+* Implement core functionality
+* Set up CI/CD for builds
+* Write initial tests
+* Create minimal documentation
+
+=== Phase 3: Feature Development
+
+* Build out primary features
+* Expand test coverage
+* Add user documentation
+* Community feedback integration
+
+=== Phase 4: Stabilisation
+
+* Performance optimisation
+* Security hardening
+* Documentation completion
+* Release preparation
+
+=== Phase 5: Release & Maintenance
+
+* Initial public release
+* Bug fixes and patches
+* Feature enhancements
+* Community support
+
+== Contributing
+
+Contributions will be welcome once the project specification is in place. See link:CONTRIBUTING.md[CONTRIBUTING.md] for the general process.
+
+== Timeline
+
+_No timeline estimates - specification pending._
+
+== Contact
+
+* Repository: https://github.com/hyperpolymath/snapcreate
+* Maintainer: hyperpolymath
