@@ -36,7 +36,7 @@ snapcreate/
 ├── docs/              # Documentation
 │   └── CITATIONS.adoc
 ├── justfile           # Task runner (RSR standard template)
-├── LICENSE.txt        # Dual MIT / AGPL-3.0-or-later
+├── LICENSE.txt        # Dual MIT / PMPL-1.0-or-later
 ├── SECURITY.md        # Security policy template
 ├── CONTRIBUTING.md    # Contribution guidelines template
 ├── CODE_OF_CONDUCT.md
@@ -81,7 +81,7 @@ just guix-shell  # or: just nix-shell
 
 == License
 
-Dual-licensed under link:LICENSE.txt[MIT OR AGPL-3.0-or-later].
+Dual-licensed under link:LICENSE.txt[MIT OR PMPL-1.0-or-later].
 
 Encourages (non-binding) adherence to https://github.com/hyperpolymath/palimpsest-license[Palimpsest License] principles for consent-based digital interaction.
 
