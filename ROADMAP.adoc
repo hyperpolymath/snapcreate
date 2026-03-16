@@ -23,7 +23,7 @@ The following foundational elements are in place:
 | Component | Status | Notes
 
 | Git repository structure | Done | Standard layout
-| License (MIT / AGPL-3.0-or-later) | Done | Dual license with Palimpsest overlay
+| License (MIT / PMPL-1.0-or-later) | Done | Dual license with Palimpsest overlay
 | EditorConfig | Done | Consistent formatting
 | Gitignore / Gitattributes | Done | Standard patterns
 |===
