@@ -1,0 +1,26 @@
+# SPDX-License-Identifier: PMPL-1.0-or-later
+# Clade declaration — part of the gv-clade-index registry
+# See: https://github.com/hyperpolymath/gv-clade-index
+
+[identity]
+uuid = "a88e859c-fb4a-5d06-8053-b3a3722a63d2"
+primary-forge = "github"
+primary-owner = "hyperpolymath"
+canonical-name = "snapcreate"
+prefixed-name = "ap-snapcreate"
+
+[clade]
+primary = "ap"
+secondary = []
+assigned = "2026-03-16"
+rationale = ""
+
+[forges]
+github = "hyperpolymath/snapcreate"
+gitlab = "hyperpolymath/snapcreate"
+bitbucket = "hyperpolymath/snapcreate"
+
+[lineage]
+type = "standalone"
+parent = "Snapshot creation tool"
+born = "2026-03-16"
