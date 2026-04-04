@@ -1,24 +1,123 @@
 // SPDX-License-Identifier: PMPL-1.0-or-later
+// Copyright (c) 2025-2026 Jonathan D.A. Jewell <j.d.a.jewell@open.ac.uk>
 = SnapCreate — Show Me The Receipts
 :toc:
+:toclevels: 3
 :icons: font
 
-The README makes claims. This file backs them up.
+The README makes claims. This file backs them up with current reality and honest gaps.
+
+== Claim 1: RSR Infrastructure is Complete and CI-Gated
 
 [quote, README]
 ____
-This repository currently contains RSR (Rhodium Standard Repository) infrastructure scaffolding and is awaiting project specification and implementation.
+This repository currently contains RSR (Rhodium Standard Repository) infrastructure scaffolding
+and is awaiting project specification and implementation.
 ____
+
+*How it works:* The repository has the full RSR skeleton: a 17-workflow `.github/workflows/`
+suite (CodeQL, Hypatia neurosymbolic scan, Scorecard, TruffleHog, EditorConfig, mirror, instant-sync,
+guix-nix-policy, rsr-antipattern, security-policy, wellknown-enforcement, workflow-linter,
+npm-bun-blocker, ts-blocker, scorecard-enforcer, secret-scanner), a `justfile` with standard
+RSR recipes, `guix.scm`, `flake.nix`, `SECURITY.md`, `CONTRIBUTING.md`, `CODE_OF_CONDUCT.md`,
+and `stapeln.toml`. The ROADMAP.adoc confirms this: all infrastructure rows are marked "Done".
+This means new code added to this repo immediately inherits the full hyperpolymath governance
+baseline — language policy enforcement, supply-chain security, and mirror propagation — from the
+first commit.
+
+*Honest caveat:* There is no application code yet. The project specification has not been published.
+The README states "Project specification will be uploaded shortly" — that statement dates from 2025
+and the spec has not arrived as of 2026-04. This repo is purely a governance scaffold awaiting
+a defined purpose. The technology stack table in the README (ReScript, Deno, Rust, Gleam) is
+boilerplate inherited from the RSR template, not a confirmed design decision.
+
+== Claim 2: Dual-Licensed with Palimpsest Overlay
+
+[quote, README]
+____
+Dual-licensed under MIT OR PMPL-1.0-or-later. Encourages (non-binding) adherence to Palimpsest
+License principles for consent-based digital interaction.
+____
+
+*How it works:* `LICENSE.txt` contains dual MIT/PMPL-1.0-or-later text. This is a carry-over from
+the RSR template's optional dual-license configuration, which accommodates downstream consumers
+who need an OSI-approved license (MIT) while offering the stronger Palimpsest consent principles
+to those who can accept them. The `LICENSES/` directory holds the full texts of both licenses.
+
+*Honest caveat:* The dual MIT/PMPL license is itself infrastructure boilerplate. Until application
+code exists, the license choice has no material consequence. When implementation begins, the license
+decision should be revisited deliberately — if there is no specific requirement for MIT
+compatibility, PMPL-1.0-or-later alone is the standard hyperpolymath policy.
+
+== Dogfooded Across The Account
+
+[cols="1,2,1"]
+|===
+| Repo | Relationship | Status
+
+| `rsr-template-repo`
+| SnapCreate was cloned from the RSR template; it validates that the template produces a
+  correctly-wired repo with no manual fixup required
+| Active (structural proof)
+
+| `hypatia`
+| Hypatia's CI scan validates SnapCreate's workflow conformance on every push
+| Active
+
+| `HyperpolymathRegistry`
+| SnapCreate is registered in the account registry; its pre-specification status is tracked
+| Active
+|===
 
 == File Map
 
-[cols="1,2"]
+[cols="1,3"]
 |===
 | Path | What's There
 
-| `test(s)/` | Test suite
+| `README.adoc`
+| Project overview: pre-specification status, planned tech stack, placeholder getting-started guide
+
+| `ROADMAP.adoc`
+| Infrastructure completion matrix + blank implementation milestones awaiting project spec
+
+| `docs/CITATIONS.adoc`
+| Citation format for when the project publishes results or datasets
+
+| `justfile`
+| RSR-standard recipes: `build`, `test`, `check`, `guix-shell`, `nix-shell`, `panic`
+
+| `LICENSE.txt`
+| Dual MIT/PMPL-1.0-or-later license text
+
+| `LICENSES/`
+| Full license texts: PMPL-1.0-or-later.txt + MPL-2.0.txt
+
+| `SECURITY.md`
+| Security policy template (responsible disclosure process)
+
+| `CONTRIBUTING.md`
+| Contribution guidelines template
+
+| `guix.scm`
+| Guix package manifest (template; no project-specific packages yet)
+
+| `flake.nix`
+| Nix flake (template; no project-specific derivations yet)
+
+| `stapeln.toml`
+| Stapeln container configuration (template)
+
+| `.github/workflows/`
+| 17 RSR-standard CI workflows (all present and SHA-pinned)
+
+| `.machine_readable/6a2/`
+| A2ML machine-readable artefacts (STATE, META, ECOSYSTEM, AGENTIC, NEUROSYM, PLAYBOOK)
+
+| `0-AI-MANIFEST.a2ml`
+| AI agent entry point: canonical file locations, critical invariants, lifecycle hooks
 |===
 
 == Questions?
 
-Open an issue or reach out directly — happy to explain anything in more detail.
+Open an issue or reach out to Jonathan D.A. Jewell <j.d.a.jewell@open.ac.uk>.
