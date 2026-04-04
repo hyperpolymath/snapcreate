@@ -1,5 +1,7 @@
 # TEST-NEEDS: snapcreate
 
+## CRG Grade: C — ACHIEVED 2026-04-04
+
 ## Current State
 
 | Category | Count | Details |
