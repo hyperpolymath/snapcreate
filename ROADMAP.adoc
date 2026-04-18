@@ -82,7 +82,7 @@ The following require project specification before implementation:
 * [ ] guix.scm or flake.nix
 * [ ] deno.json (if using ReScript/JS)
 * [ ] Cargo.toml (if using Rust)
-* [ ] Custom justfile recipes for the project
+* [ ] Custom Justfile recipes for the project
 
 === Source Code
 

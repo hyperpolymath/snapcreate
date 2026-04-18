@@ -34,7 +34,7 @@ snapcreate/
 │   └── ISSUE_TEMPLATE/
 ├── docs/              # Documentation
 │   └── CITATIONS.adoc
-├── justfile           # Task runner (RSR standard template)
+├── Justfile           # Task runner (RSR standard template)
 ├── LICENSE.txt        # Dual MIT / PMPL-1.0-or-later
 ├── SECURITY.md        # Security policy template
 ├── CONTRIBUTING.md    # Contribution guidelines template
