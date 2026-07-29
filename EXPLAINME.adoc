@@ -18,7 +18,7 @@ ____
 *How it works:* The repository has the full RSR skeleton: a 17-workflow `.github/workflows/`
 suite (CodeQL, Hypatia neurosymbolic scan, Scorecard, TruffleHog, EditorConfig, mirror, instant-sync,
 guix-nix-policy, rsr-antipattern, security-policy, wellknown-enforcement, workflow-linter,
-npm-bun-blocker, ts-blocker, scorecard-enforcer, secret-scanner), a `justfile` with standard
+runtime-policy, scorecard-enforcer, secret-scanner), a `justfile` with standard
 RSR recipes, `guix.scm`, `flake.nix`, `SECURITY.md`, `CONTRIBUTING.md`, `CODE_OF_CONDUCT.md`,
 and `stapeln.toml`. The ROADMAP.adoc confirms this: all infrastructure rows are marked "Done".
 This means new code added to this repo immediately inherits the full hyperpolymath governance
