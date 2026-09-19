@@ -143,7 +143,7 @@ The phases below are placeholders. Actual roadmap milestones will be defined onc
 
 == Contributing
 
-Contributions will be welcome once the project specification is in place. See link:CONTRIBUTING.md[CONTRIBUTING.md] for the general process.
+Contributions will be welcome once the project specification is in place. See link:.github/CONTRIBUTING.md[CONTRIBUTING.md] for the general process.
 
 == Timeline
 

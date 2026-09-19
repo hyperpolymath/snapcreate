@@ -88,7 +88,7 @@ Encourages (non-binding) adherence to https://github.com/hyperpolymath/palimpses
 
 == Contributing
 
-See link:CONTRIBUTING.md[CONTRIBUTING.md] for guidelines.
+See link:.github/CONTRIBUTING.md[CONTRIBUTING.md] for guidelines.
 
 == See Also
 
