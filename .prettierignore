@@ -2,3 +2,6 @@
 # Prettier must not reformat them.
 package.json
 pnpm-lock.yaml
+# Hand-maintained, SHA-pinned CI config and agent docs: not Prettier-managed.
+.github/
+.claude/

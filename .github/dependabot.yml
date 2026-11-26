@@ -38,6 +38,12 @@ updates:
     schedule:
       interval: "weekly"
 
+  # Bun (keeps bun.lock in step with package.json)
+  - package-ecosystem: "bun"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+
   # Python/pip
   - package-ecosystem: "pip"
     directory: "/"
