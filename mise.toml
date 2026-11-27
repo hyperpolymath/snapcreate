@@ -28,14 +28,8 @@ gnu-grep = "latest"
 # Common environment variables
 
 # Task runner
-[tasks.task]
-run = "go-task"
-
-[tasks.build]
-run = "cargo build --release"
-
-[tasks.test]
-run = "cargo test"
+[alias]
+task = "go-task"
 
 [tasks.lint]
 run = "bun install --frozen-lockfile && bunx --no-install --bun prettier --check ."
