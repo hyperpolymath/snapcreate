@@ -53,7 +53,7 @@ Per the Hyperpolymath Standard (see `.claude/CLAUDE.md`):
 |===
 | Category | Technology
 
-| Primary Language | ReScript (compiles to JS, type-safe)
+| Primary Language | AffineScript (affine-typed, compiles to typed-wasm or ESM)
 | Runtime | Deno (replaces Node/npm/bun)
 | Systems/WASM | Rust
 | Mobile | Tauri 2.0+ or Dioxus
