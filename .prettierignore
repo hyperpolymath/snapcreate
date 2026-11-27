@@ -1,0 +1,6 @@
+# package.json is JCS-canonical (LANGUAGE-POLICY §1.4).
+# Prettier must not reformat it.
+package.json
+# Hand-maintained, SHA-pinned CI config and agent docs: not Prettier-managed.
+.github/
+.claude/
